@@ -1,5 +1,8 @@
+var fs = require("fs");
+fs.readFile("/bot/tkn.txt")
+
 const Telegraf = require('telegraf')
-const BotTocken = '555289887:AAGlrPpG8Opm6sgxXKITGDQ4xSlGQKU96nA'
+const BotTocken = fs;
 
 const bot = new Telegraf(BotTocken)
 bot.start((ctx) => ctx.reply('Welcome!'))
